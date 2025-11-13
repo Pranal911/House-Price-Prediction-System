@@ -22,6 +22,7 @@ for name, path in model_files.items():
 
 st.title(" House Price Prediction System")
 st.write("Enter the house details below to predict the price.")
+st.warning("All the datasets used for training this model are from kaggle and prediction is calculated from various models for educational purposes. Not meant for actual/factual use. ")
 
 area = st.number_input("Area (sq ft)", min_value=500, max_value=20000, value=7500)
 bedrooms = st.number_input("Number of Bedrooms", min_value=1, max_value=10, value=3)
